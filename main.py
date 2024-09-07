@@ -12,15 +12,14 @@ def login_of_users():
         print(f'user 1 is logged in')
         see_tasks1 = input('Do u want to see your tasks Y/N: ')
         print(see_tasks1)
-        if see_tasks1 == 'n' :
+        if see_tasks1 == 'no' or 'n' :
             print('ok')
-        if see_tasks1 == 'y':
+        if see_tasks1 == 'yes' or 'y':
             print(*user1_tasks)
     if x1 in user2[0] and x2 in user2[1]:
         print('the user 2 is logged in')
         see_tasks2 = input('Do u want to see your tasks Y/N: ')
-        if see_tasks2 != 'n' and not 'no' :
-            pass
+        if see_tasks=='n' or 'no':
             print('ok')
         if see_tasks2 == 'y'or 'yes':
             print(*user2_tasks)
